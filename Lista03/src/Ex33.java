@@ -11,13 +11,13 @@ public class Ex33 {
             {"_", "_", "_"},
             {"_", "_", "_"}
         };
-        boolean loop = true;
-        String vez = "O"; //1- jogador 1  2- jogador 2.
-        int ordem = 1;
-        boolean entradaValida = false;
-        String numeroX = ""; // para as entradas
+        boolean loop = true; // controla o loop do jogo
+        String vez = "O"; //1- jogador 1  2- jogador 2. usado na atribuição de valor na matriz
+        int ordem = 1; // alterna a ordem do jogador 1 ou 2
+        boolean entradaValida = false; // verificação de entrada inválida
+        String numeroX = ""; // para as entradas X
         int entradaX = 0;
-        String numeroY = ""; // para as entradas
+        String numeroY = ""; // para as entradas Y
         int entradaY = 0;
 
         System.out.println("JOGO DA VELHA!");
@@ -29,12 +29,12 @@ public class Ex33 {
             for (int i = 0; i < matriz.length; i++) { //faço um contador para contar as jogadas
                 System.out.println("JOGADA NÚMERO: " + (i + 1));
                 System.out.println("VEZ DO JOGADOR " + ordem + ".");
-                entradaValida = false;
+                entradaValida = false; // resetando a variável de controle para a entrada X
                 while (!entradaValida) {
                     System.out.print("Digite um número entre 1 e 3 para o eixo X: ");
-                    numeroX = scan.nextLine();  // Lê a linha completa
+                    numeroX = scan.nextLine();  // leio a linha completa
                     try {
-                        entradaX = Integer.parseInt(numeroX);  // Converte para inteiro
+                        entradaX = Integer.parseInt(numeroX);  // converto para inteiro
 
                         if (entradaX >= 1 && entradaX <= 3) {
                             entradaValida = true;
@@ -47,12 +47,12 @@ public class Ex33 {
                     }
                 }
 
-                entradaValida = false; // Resetando a variável de controle para a entrada Y
+                entradaValida = false; // resetando a variável de controle para a entrada Y
                 while (!entradaValida) {
                     System.out.print("Digite um número entre 1 e 3 para o eixo Y: ");
-                    numeroY = scan.nextLine();  // Lê a linha completa
+                    numeroY = scan.nextLine();  // leio a linha completa
                     try {
-                        entradaY = Integer.parseInt(numeroY);  // Converte para inteiro
+                        entradaY = Integer.parseInt(numeroY);  // converto para inteiro
 
                         if (entradaY >= 1 && entradaY <= 3) {
                             entradaValida = true;
@@ -65,10 +65,10 @@ public class Ex33 {
                     }
                 }
 
-                // Colocando a jogada na matriz
+                // colocando a jogada na matriz
                 matriz[entradaX - 1][entradaY - 1] = vez;
 
-                // Imprimir o tabuleiro
+                // imprimir o tabuleiro
                 for (int j = 0; j < matriz.length; j++) {
                     for (int k = 0; k < matriz[j].length; k++) {
                         System.out.print(matriz[j][k] + " | ");
@@ -77,8 +77,10 @@ public class Ex33 {
                     System.out.println("-----------"); // linha divisória
                 }
                 
-                //AGORA TEM QUE CONFERIR SE GANHOU OU EMPATOU
+                //verificação de ganhador ou empate
                 String resultado = null;
+                
+                // verifico as linhas
                 for (int j = 0; j < 3; j++) {
                     if (matriz[j][0].equals(matriz[j][1]) && matriz[j][0].equals(matriz[j][2]) && !matriz[j][0].equals("_")) {
                         resultado = matriz[j][0]; // Retorna o vencedor ("O" ou "X")
@@ -86,8 +88,8 @@ public class Ex33 {
                     }
                 }
 
-                // Verificar colunas
-                if (resultado == null) {
+                // verifico as colunas
+                if (resultado == null) { //as próximas confirmações só são feitas caso ainda não haja atribuição de valor ao resultado
                     for (int j = 0; j < 3; j++) {
                         if (matriz[0][j].equals(matriz[1][j]) && matriz[0][j].equals(matriz[2][j]) && !matriz[0][j].equals("_")) {
                             resultado = matriz[0][j]; // Retorna o vencedor ("O" ou "X")
@@ -96,28 +98,28 @@ public class Ex33 {
                     }
                 }
 
-                // Verificar diagonais
+                // verifico as diagonais
                 if (resultado == null) {
                     if (matriz[0][0].equals(matriz[1][1]) && matriz[0][0].equals(matriz[2][2]) && !matriz[0][0].equals("_")) {
-                        resultado = matriz[0][0]; // Diagonal principal
+                        resultado = matriz[0][0]; // diagonal principal
                     } else if (matriz[0][2].equals(matriz[1][1]) && matriz[0][2].equals(matriz[2][0]) && !matriz[0][2].equals("_")) {
-                        resultado = matriz[0][2]; // Diagonal secundária
+                        resultado = matriz[0][2]; // diagonal secundária
                     }
                 }
 
-                // Verificar empate (se não houver mais "_" na matriz)
+                // verifico o empate (se não houver mais "_" na matriz)
                 if (resultado == null) {
                     boolean empate = true;
                     for (int j = 0; j < 3; j++) {
                         for (int k = 0; k < 3; k++) {
-                            if (matriz[j][k].equals("_")) {
-                                empate = false; // Ainda há espaço vazio, portanto o jogo não empatou
+                            if (matriz[j][k].equals("_")) { //compara em todas as linhas e colunas se há espaço livre
+                                empate = false; // ainda há espaço vazio, portanto o jogo não empatou
                                 break;
                             }
                         }
                     }
                     if (empate) {
-                        resultado = "Empate"; // Se não houver mais espaços vazios, é empate
+                        resultado = "Empate"; // se não houver mais espaços vazios e nenhuma atribuição de valor ao resultado, é empate
                     }
                 }
 
@@ -125,13 +127,13 @@ public class Ex33 {
                     if (resultado.equals("Empate")) {
                         System.out.println("O jogo terminou em empate!");
                     } else {
-                        System.out.println("Jogador " + (resultado.equals("O") ? "1" : "2") + " venceu!");
+                        System.out.println("Jogador " + (resultado.equals("O") ? "1" : "2") + " venceu!"); // condição para retornar o jogador
                     }
-                    loop = false; // Encerra o jogo
-                    break; // Sai do loop de jogadas
+                    loop = false; // encerro o jogo saindo do loop while
+                    break; // saio do loop de jogadas
                 }
 
-                // Alternar entre os jogadores
+                // alterno entre os jogadores
                 if (ordem == 1) {
                     ordem = 2;
                     vez = "X";
