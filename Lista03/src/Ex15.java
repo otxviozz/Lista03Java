@@ -1,3 +1,6 @@
+//Create a vector A with 10 integer elements. Develop a program that
+//defines the percentage of even and odd elements, respectively,
+//stored in this vector.
 package exercises;
 
 public class Ex15 {
