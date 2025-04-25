@@ -1,3 +1,6 @@
+//Create a vector A with 10 integer elements. Write a program that
+//prints each element of vector A and the relation of all pairs from 0 to the
+//respective element.
 package lista03;
 
 public class Ex26 {
