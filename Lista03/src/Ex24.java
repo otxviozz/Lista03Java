@@ -1,3 +1,4 @@
+//Read a vector A with 20 elements. Construct two vectors B and C, where the even and odd values ​​of A will be stored in vectors B and C, respectively.
 package lista03;
 
 public class Ex24 {
