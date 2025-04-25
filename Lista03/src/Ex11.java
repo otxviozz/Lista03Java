@@ -1,3 +1,6 @@
+//Create a vector A with 10 integer elements. Implement a program that
+//defines and writes the number of elements stored in this vector that
+//are even.
 package exercises;
 
 public class Ex11 {
