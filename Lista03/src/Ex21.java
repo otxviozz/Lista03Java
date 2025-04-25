@@ -1,3 +1,4 @@
+//Write a program that checks whether a given vector A of 10 integer elements is a palindrome or not.
 package lista03;
 
 public class Ex21 {
