@@ -1,3 +1,4 @@
+//Create a vector A with 10 integer elements. Implement a program that determines the sum of the elements stored in this vector that are multiples of 5.
 package exercises;
 
 public class Ex13 {
