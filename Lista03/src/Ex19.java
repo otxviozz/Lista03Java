@@ -1,3 +1,5 @@
+//Randomly generate a vector A with 10 integer elements equal to 0 or 1.
+//Implement a program that determines the percentage of 0's and 1's in vector A.
 package lista03;
 
 public class Ex19 {
