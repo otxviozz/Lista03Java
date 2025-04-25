@@ -1,6 +1,6 @@
 //Create a vector A with 15 integer elements. Construct a vector B of the same size,
 //with each element of vector B being the factorial of the corresponding element in A.
-package lista03;
+package exercises;
 
 public class Ex27 {
 

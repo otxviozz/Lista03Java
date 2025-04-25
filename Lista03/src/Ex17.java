@@ -1,6 +1,6 @@
 //Read a vector A with 10 integer elements corresponding to the ages of a group of people. 
 //Write a program that determines and writes the number of people who are over 35 years old.
-package lista03;
+package exercises;
 
 public class Ex17 {
 

@@ -1,6 +1,6 @@
 //Create a vector A with 5 integer elements. Write a program that
 //prints the multiplication table of each of the elements of vector A.
-package lista03;
+package exercises;
 
 public class Ex25 {
 

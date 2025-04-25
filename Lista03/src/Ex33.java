@@ -3,7 +3,7 @@
 //to place his or her piece (‘O’ or ‘X’). The program should prevent invalid moves and automatically determine
 //when the game is over and who is the winner (Player 1 or Player 2). 
 //With each new move, the program should update the board status on the screen.
-package lista03;
+package exercises;
 
 import java.util.Scanner;
 

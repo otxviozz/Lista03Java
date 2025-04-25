@@ -1,6 +1,6 @@
 //Read a vector A with 10 integer elements corresponding to the ages of a group of people.
 //Write a program that determines and writes the youngest and oldest ages.
-package lista03;
+package exercises;
 
 public class Ex18 {
 

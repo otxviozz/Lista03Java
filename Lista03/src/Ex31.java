@@ -1,6 +1,6 @@
 //Generate and print a matrix M (10 x 10) with random values ​​between 0 and 9.
 //After that, indicate which is the largest and smallest value in row 5 and which is the largest and smallest value in column 7.
-package lista03;
+package exercises;
 
 public class Ex31 {
 

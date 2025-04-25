@@ -1,7 +1,7 @@
 //Create a vector A with 10 integer elements.
 //Develop a program that checks if "all" the elements of vector A are even.
 //If at least one element of the vector is not even, the repetition process stops going through the elements of the vector and must be terminated.
-package lista03;
+package exercises;
 
 public class Ex20 {
 
