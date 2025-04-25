@@ -1,3 +1,5 @@
+//Capture values ​​from the keyboard to fill a matrix M (3 x 3).
+//After capturing, print the created matrix and find the number of even numbers and the number of odd numbers.
 package lista03;
 
 import java.util.Scanner;
