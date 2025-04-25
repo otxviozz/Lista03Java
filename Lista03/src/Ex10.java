@@ -1,3 +1,5 @@
+//Create a vector A with 10 integer elements. Construct a vector B of the same type and size,
+//with each element of vector B being the remainder of the division of the respective element of A by 2 (two).
 package exercises;
 
 public class Ex10 {
