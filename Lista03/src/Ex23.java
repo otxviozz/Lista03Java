@@ -1,3 +1,4 @@
+//Read two vectors A and B with 10 elements each. Construct a vector C, which is the union of the other two vectors.
 package lista03;
 
 public class Ex23 {
