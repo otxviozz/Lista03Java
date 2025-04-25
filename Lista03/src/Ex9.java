@@ -1,3 +1,6 @@
+//Create two vectors A and B each with 10 integer elements. Construct a
+//vector C, where each element of C is the division of the respective elements in
+//A and B.
 package exercises;
 
 public class Ex9 {
