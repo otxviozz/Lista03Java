@@ -1,3 +1,8 @@
+//Write a program to play tic-tac-toe. The program should allow two players to play a game of tic-tac-toe,
+//using the computer to view the board. Each player takes turns informing the position where he or she wants
+//to place his or her piece (‘O’ or ‘X’). The program should prevent invalid moves and automatically determine
+//when the game is over and who is the winner (Player 1 or Player 2). 
+//With each new move, the program should update the board status on the screen.
 package lista03;
 
 import java.util.Scanner;
