@@ -1,3 +1,5 @@
+//Create two vectors A and B each with 10 integer elements. 
+//Develop a program that performs the intersection of vectors A and B to produce a vector C.
 package lista03;
 
 public class Ex28 {
