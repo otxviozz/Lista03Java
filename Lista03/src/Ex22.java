@@ -1,3 +1,5 @@
+//Read a vector A with 10 elements and construct a vector B of the same type
+//and size and with the same elements as A, although these must be inverted.
 package lista03;
 
 public class Ex22 {
