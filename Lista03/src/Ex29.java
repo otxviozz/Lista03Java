@@ -1,3 +1,5 @@
+//Create two vectors A and B each with 10 integer elements. 
+//Develop a program that creates a vector C that is the difference of the sets formed by the elements of vectors A and B.
 package lista03;
 
 public class Ex29 {
