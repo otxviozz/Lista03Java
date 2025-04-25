@@ -1,3 +1,6 @@
+//Create a vector A with 10 integer elements. Implement a program that
+//defines and writes the simple arithmetic mean of the odd elements
+//stored in this vector.
 package exercises;
 
 public class Ex14 {
