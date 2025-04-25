@@ -1,3 +1,7 @@
+//Create a vector A with 10 integer elements. Write a program that calculates and writes: 
+//a) the sum of elements stored in this vector that are less than 15;
+//b) the number of elements stored in the vector that are equal to 15;
+//c) the average of the elements stored in the vector that are greater than 15.
 package exercises;
 
 public class Ex16 {
